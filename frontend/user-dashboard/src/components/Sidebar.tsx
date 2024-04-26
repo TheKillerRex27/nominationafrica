@@ -38,7 +38,10 @@ function Sidebar() {
                 to="/dashboard"
                 className="sidebar-link"
                 style={
-                  location.pathname === "/dashboard" ? activeLinkStyle : {}
+                  location.pathname === "/dashboard" ||
+                  location.pathname === "/"
+                    ? activeLinkStyle
+                    : {}
                 }
               >
                 <span>
